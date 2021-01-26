@@ -1,0 +1,4 @@
+<button mat-button color="primary" (click)="addPost()">Add Post</button>
+<div *ngFor="let blog of blogs">
+    <app-blog [blog]="blog"></app-blog>
+</div>

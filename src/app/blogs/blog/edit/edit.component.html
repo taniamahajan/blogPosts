@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Edit Post</h2>
+<mat-dialog-content class="mat-typography">
+  <input matInput [(ngModel)]="data.post" value="data.post">
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.post" cdkFocusInitial>Save</button>
+</mat-dialog-actions>
